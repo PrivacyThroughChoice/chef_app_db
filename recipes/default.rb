@@ -42,5 +42,5 @@ mysql_database_user "thunr-db" do
   password 'changeme'
   database_name 'thunr-db'
   connection db_conn
-  action :create
+  action :grant
 end
