@@ -40,6 +40,7 @@ end
 
 mysql_database_user "thunr-db" do
   password 'changeme'
+  host '%'
   database_name 'thunr-db'
   connection db_conn
   action :grant
