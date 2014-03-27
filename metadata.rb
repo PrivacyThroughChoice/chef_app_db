@@ -1,9 +1,9 @@
-name             'thunr_chef_app_db'
-maintainer       'Burberry, LTD'
-maintainer_email 'fraser.scott@burberry.com
+name             'chef_app_db'
+maintainer       'Fraser Scott'
+maintainer_email 'admin@privacythroughchoice.org'
 '
 license          'MIT'
-description      'Installs/Configures thunr_chef_app_db'
+description      'Installs/Configures chef_app_db'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          '0.1.0'
 

@@ -1,4 +1,4 @@
-# thunr_chef_app_db cookbook
+# chef_app_db cookbook
 
 # Requirements
 
@@ -10,5 +10,3 @@
 
 # Author
 
-Author:: Burberry, LTD (<fraser.scott@burberry.com
->)

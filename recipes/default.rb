@@ -1,8 +1,8 @@
 #
-# Cookbook Name:: thunr_chef_app_db
+# Cookbook Name:: chef_app_db
 # Recipe:: default
 #
-# Copyright (C) 2014 Burberry, LTD
+# Copyright (C) 2014 Privacy Through Choice
 # 
 # Permission is hereby granted, free of charge, to any person obtaining
 # a copy of this software and associated documentation files (the
@@ -33,15 +33,15 @@ db_conn =  {
     :password  => node['mysql']['server_root_password']
 }
 
-mysql_database 'thunr-db' do
+mysql_database 'ptc-db' do
   connection db_conn
   action :create
 end
 
-mysql_database_user "thunr-db" do
+mysql_database_user "ptc-db" do
   password 'changeme'
   host '%'
-  database_name 'thunr-db'
+  database_name 'ptc-db'
   connection db_conn
   action :grant
 end
