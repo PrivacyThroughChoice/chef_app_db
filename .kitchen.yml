@@ -13,12 +13,12 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[thunr_chef_app_db::default]
+      - recipe[chef_app_db::default]
       - recipe[minitest-handler]
     attributes:
   - name: test
     run_list:
-      - recipe[thunr_chef_app_db::default]
+      - recipe[chef_app_db::default]
       - recipe[minitest-handler]
     attributes: {
       mysql: {

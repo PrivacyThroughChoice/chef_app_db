@@ -1,7 +1,7 @@
 name             'chef_app_db'
 maintainer       'Fraser Scott'
 maintainer_email 'admin@privacythroughchoice.org'
-'
+
 license          'MIT'
 description      'Installs/Configures chef_app_db'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
