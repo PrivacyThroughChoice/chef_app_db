@@ -45,3 +45,16 @@ mysql_database_user "ptc-db" do
   connection db_conn
   action :grant
 end
+
+cookbook_file "#{Chef::Config[:file_cache_path]}/mysql-init.sql" do
+  owner 'root'
+  group 'root'
+  mode 0644
+end
+
+mysql_database 'init db' do
+  connection db_conn
+  database_name 'ptc-db'
+  sql { ::File.open("#{Chef::Config[:file_cache_path]}/mysql-init.sql").read }
+  action :query
+end
